@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9CFCBE48-41A2-4CF9-B1FF-8C36371C5F3E}"
 	ProjectSection(SolutionItems) = preProject
 		datatables.mvc.vsmdi = datatables.mvc.vsmdi
@@ -9,11 +9,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc3Application.AppSpike", "Mvc3Application.AppSpike\Mvc3Application.AppSpike.csproj", "{C14FDA57-187A-41EE-9931-93140DEC8D1E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datatables.Mvc", "Datatables.Mvc\Datatables.Mvc.csproj", "{CFCB100E-9779-488C-8F24-ACAAF3B59D60}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTables.Mvc.Test", "Datatables.Mvc.Test\DataTables.Mvc.Test.csproj", "{B15691DD-FA32-48BB-8E9F-358382BE4A2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4Application.AppSpike", "Mvc4Application.AppSpike\Mvc4Application.AppSpike.csproj", "{B908D460-95A2-4ACF-AE27-C8A1A05112E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datatables.Mvc.Extensions", "Datatables.Mvc.Extensions\Datatables.Mvc.Extensions.csproj", "{5D433403-57CA-4960-BA78-025F1CB523ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTables.Mvc.Extensions.Test", "DataTables.Mvc.Extensions.Test\DataTables.Mvc.Extensions.Test.csproj", "{D6E14164-D4E9-4DAB-8ED6-E5B8EDEA46E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BDA704E9-7310-4479-82D6-55B5ADE6D5E4}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -24,10 +35,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C14FDA57-187A-41EE-9931-93140DEC8D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C14FDA57-187A-41EE-9931-93140DEC8D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C14FDA57-187A-41EE-9931-93140DEC8D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C14FDA57-187A-41EE-9931-93140DEC8D1E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CFCB100E-9779-488C-8F24-ACAAF3B59D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CFCB100E-9779-488C-8F24-ACAAF3B59D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFCB100E-9779-488C-8F24-ACAAF3B59D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,6 +43,18 @@ Global
 		{B15691DD-FA32-48BB-8E9F-358382BE4A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B15691DD-FA32-48BB-8E9F-358382BE4A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B15691DD-FA32-48BB-8E9F-358382BE4A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B908D460-95A2-4ACF-AE27-C8A1A05112E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B908D460-95A2-4ACF-AE27-C8A1A05112E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B908D460-95A2-4ACF-AE27-C8A1A05112E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B908D460-95A2-4ACF-AE27-C8A1A05112E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D433403-57CA-4960-BA78-025F1CB523ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D433403-57CA-4960-BA78-025F1CB523ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D433403-57CA-4960-BA78-025F1CB523ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D433403-57CA-4960-BA78-025F1CB523ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E14164-D4E9-4DAB-8ED6-E5B8EDEA46E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E14164-D4E9-4DAB-8ED6-E5B8EDEA46E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E14164-D4E9-4DAB-8ED6-E5B8EDEA46E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E14164-D4E9-4DAB-8ED6-E5B8EDEA46E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

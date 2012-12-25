@@ -1,4 +1,30 @@
-﻿using System;
+﻿#region License
+//Copyright (c) 2012 Johannes Brunner
+
+
+//Permission is hereby granted, free of charge, to any person obtaining
+//a copy of this software and associated documentation files (the
+//"Software"), to deal in the Software without restriction, including
+//without limitation the rights to use, copy, modify, merge, publish,
+//distribute, sublicense, and/or sell copies of the Software, and to
+//permit persons to whom the Software is furnished to do so, subject to
+//the following conditions:
+
+
+//The above copyright notice and this permission notice shall be
+//included in all copies or substantial portions of the Software.
+
+
+//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+//EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+//NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+//LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+//OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+//WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#endregion
+
+using System;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +62,7 @@ namespace jquery.dataTables.Test {
         [TestMethod]
         public void DataTableResult_full_parameter_list() {
             var data = new List<List<string>>() {
-                new List<string> { "hallo" }
+                new List<string> {"0","hallo"}
             };
             DataTableResult dataTableResult = new DataTableResult("1", 10, 10, data);
             Assert.AreEqual("1", dataTableResult.sEcho);
@@ -49,7 +75,7 @@ namespace jquery.dataTables.Test {
         [TestMethod]
         public void DataTableResult_full_parameter_list_from_DataTable() {
             var data = new List<List<string>>() {
-                new List<string> { "hallo" }
+                new List<string> {"0","hallo"}
             };
             DataTableResult dataTableResult = new DataTableResult(new DataTable { sEcho = "1" }, 10, 10, data);
             Assert.AreEqual("1", dataTableResult.sEcho);
@@ -73,7 +99,7 @@ namespace jquery.dataTables.Test {
         public void ExecuteResult_Ok() {
             //Arrange
             var data = new List<List<string>>() {
-                new List<string> { "hallo", "österreich" }
+                new List<string> { "hallo", "österreich"}
             };
 
             var httpRequest = new Mock<HttpRequestBase>();
@@ -96,7 +122,7 @@ namespace jquery.dataTables.Test {
                 HttpContext = httpContext.Object
             });                        
             //Assert
-            Assert.AreEqual(@"{""aaData"":[[""hallo"",""österreich""]],""iTotalDisplayRecords"":10,""iTotalRecords"":10,""sColumns"":null}", result);            
-        }
+            Assert.AreEqual(@"{""aaData"":[[""hallo"",""österreich""]],""iTotalDisplayRecords"":10,""iTotalRecords"":10,""sColumns"":null,""sEcho"":""1""}", result);            
+        }        
     }
 }
