@@ -1,8 +1,8 @@
 This projects supplies C# classes for ASP.NET MVC 4 if jQuery DataTables is used as data grid component
 and server side processing is enabled.
 
-The projects comes with a DataTables model binder, to have a convinient C# data structure to bind the
-DataTables server request and a DataTableResult to generate the neccesary JSON data strucuture needed by
+The projects comes with a DataTables model binder, to have a convienient C# data structure to bind the
+DataTables server request and a DataTableResult to generate the neccessary JSON data structure needed by
 DataTables as result.
 
 For more information see Mvc4Application.AppSpike from source.
