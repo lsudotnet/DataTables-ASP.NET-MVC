@@ -38,8 +38,7 @@ namespace Datatables.Mvc {
     /// <summary>
     /// This class represents an MVC Action result for
     /// a jquery.datatables response.
-    /// </summary>
-    [DataContract]
+    /// </summary>    
     public class DataTableResult : ActionResult, IDataTableResult<List<List<string>>> {
 
         /// <summary>
